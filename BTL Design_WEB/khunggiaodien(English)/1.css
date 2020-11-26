@@ -1,0 +1,555 @@
+*{margin: 0; padding: 0;}
+/* .khungtren
+{
+    background-image:url(images/anh2.jpg);
+    padding: 3px 0px;
+    background-position: top;
+    display: flex;
+} 
+.khungxahoi
+{
+    display: flex;
+}
+li
+{
+    color: white;
+    list-style: none;
+    margin: 0px 10px;
+}
+.mangxahoi
+{
+display: flex;
+}
+.mangxahoi a
+{
+ margin: 0px 10px;
+ display: block;
+ text-decoration: none;
+ color: white;
+}
+.lienket a
+{
+    padding: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+.ngonngu a
+{
+  text-decoration: none;
+  color: white;
+}
+.khungdangnhap-dangky
+{
+    display: flex;
+}   
+.khungdangnhap-dangky li a
+{
+    text-decoration: none;
+    color: white;
+} */
+body
+{
+    font-family: var(--font1);
+}
+:root
+{
+    --font1:'Poppins', sans-serif;
+    --font2:'Quicksand', sans-serif;
+}
+.nav-item
+{
+    display: flex;
+    margin: 0px 7px;
+}
+ul.navbar-nav.khungnho {
+    margin-left: 80px;
+}
+.navbar-brand.khung1
+{
+    background-color: #ff7979;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+a.nav-link
+{
+ color: white!important;
+ font-weight: 300;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.khunghinh
+{
+    background-image: url(images/anh2.jpg);
+}
+/* hetkhungtren */
+.navbar-nav.ml-auto.khungto li a
+{
+  position: relative;
+  display: inline-block;
+}
+.navbar-nav.ml-auto.khungto li a::after
+{
+    
+  content: ' ';
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -45%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.navbar-nav.ml-auto.khungto li a:hover::after
+{
+  opacity: 1;
+}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.kichco {
+    padding: 15px 0px;
+}
+.carousel-inner
+{
+    height: 900px;
+    position: relative;
+}
+.carousel-inner::after
+{  
+  width: 100%;
+  height: 100%; 
+  content: ' ';
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient(left,#000000b0 0%,#12121361 50%,#00000061 100%);
+}
+.carousel-caption
+{
+ width: 70%;
+ position: absolute;
+ z-index: 2;
+ top:50%;
+ left: 50%;
+ transform:translate(-50%,-50%);
+ animation: divao 1s forwards;
+ animation-delay: 2s;
+ opacity: 0;
+}
+.carousel-caption p
+{
+    font-family: var(--font2);
+    font-size: 50px;
+}
+img.slideanh
+{
+ animation: zoomlen 40s forwards;
+ animation-delay: 1s;
+}
+@-webkit-keyframes divao
+{
+    from{
+        top: 45%;
+        opacity: 0;
+    }
+    to
+    {
+        top: 52%;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes zoomlen
+{
+    from{
+        transform: scale(1);
+        }
+     to{
+         transform: scale(2);
+     }   
+}
+.textvaanh
+{
+    margin-top: 100px;
+}
+.luxury-hotel
+{
+    padding: 10% 0;
+    background-color:#dcdde170;
+    height:auto;
+}
+.textluxury
+{
+    font-size: 15px;
+    font-family: var(--font1);
+    padding: 40px 0px;
+    position: relative;
+    font-weight: 600;
+}
+.textluxury::after
+{
+    content: ' ';
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left:-15px;
+   background-color: gray;
+}
+.luxury-hotel p.roomluxury
+{
+    font-family: var(--font2);
+    font-size: 60px;
+}
+._2icon
+{
+    padding: 20px 20px;
+    font-size: 20px;
+    display: flex;
+}
+._2icon p:nth-child(2)
+{
+    margin-left: 30px;
+}
+.text-trai
+{
+    padding: 0px 20px;
+}
+h3.roomstar
+{
+    font-size: 15px;
+    padding: 0px 20px;
+}
+h3.roomstar i
+{
+    color: #fbc531;
+}
+.khungphai a._4anh
+{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: block;
+}
+.khungphai ._4anh img
+{
+    width: 100%;
+    height: 100%;
+}
+.khungphai .roomname
+{
+
+    position: absolute;
+    bottom: -4%;
+    left: 2%;
+    color: black;
+    font-size: 13px;
+}
+.khungphai .btn.btn-success.nut2
+{
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    font-size: 10px;
+}
+.col-sm-6.anhbentrai
+{
+    background-image: url(images/anh11.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+    height: 900px;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.khungtrang p
+{
+  font-size: 20px;
+}
+.textbenphai
+{
+    background-color: #000000e6;
+    color: #d4d2d2eb;
+    position: relative;
+    font-family: var(--font2);
+}
+.textbenphai ._2textcon
+{
+ display: flex;
+ justify-content: space-between;
+}
+._1khoi
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+._1khoi h4
+{
+    font-size: 13px;
+}
+._1khoi h2
+{
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.textbenphai ._2textcon p
+{
+    width: 45%;
+
+}
+.background-nho
+{
+    width: 100%;
+    margin: auto;
+    background-image: url(images/anh14.jpg);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.background-khungnho
+{
+    font-family: 'Quicksand', sans-serif; 
+    color: white;
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    z-index: 2;
+}
+.background-nho::before
+{
+    content: ' ';
+    background-image: -webkit-linear-gradient(left,#000000b0 0%,#12121361 50%,#00000061 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.hotel-news
+{
+    height: auto;
+    padding: 7% 0;
+}
+.hotel-news h3
+{
+    color: rgb(151, 146, 146); 
+    text-align: center; 
+    font-size: 15px;
+    position: relative;
+    padding: 30px 0px;
+}
+.hotel-news h3::after
+{   
+    content: " ";
+    width: 50px;
+    background-color: gray;
+    height: 3px;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: 0;
+}
+.hotel-news .card-body h5
+{
+    font-size: 20px;
+    color: gray;
+    position: relative;
+    padding: 10px 0px;
+}
+.hotel-news .card-body h5::after
+{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    border-radius: 8px;
+    background-color: black;
+}
+.khoiden
+{
+    background-color: black;
+    width: 100%;
+    height: 215px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: block;
+    position: relative;
+}
+.khoiden i
+{
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.khoiden .khoicon
+{
+ color: white;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 200px;
+ transform: translate(-50%,-50%);
+}
+.khungnhoogiua
+{
+    display: block;
+    width: 100%;
+    height: 240px;
+    background-color: #c19b76;
+    padding-top: 40px;
+    border-radius: 8px;
+}
+.khungcon
+{
+  width: 70%;
+  margin: auto;
+}
+.khungcon p
+{
+    position: relative;
+    padding: 20px 0px;
+    color: white;
+}
+.khungcon p::after
+{
+    content:" ";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 2px;
+    border-radius: 8px;
+    background-color: white;
+    margin-left: -15px;
+}
+.hotel-news .anhtren
+{
+    text-decoration: none;
+    margin-left: 20px;
+    width: 100%;
+    height: 57%;
+    background-image: url(images/anh16.jpg);
+    background-size: cover;
+    display: block;
+    position: relative;
+}
+.hotel-news .anhtren::after
+{
+    content: " ";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(left,#0000006e 0%,#1212133d 50%,#0000001f 100%);
+}
+.hotel-news .anhtren .text
+{
+ color: white;
+ position: absolute;
+ z-index: 2;
+ bottom: 5%;
+ left: 10%;
+ font-size: 25px;
+}
+.hotel-news .anhduoi
+{
+    width: 100%;
+    height: 40%;
+    background-image: url(images/anh17.jpg);
+    background-position: center;
+    background-size:cover ;
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    text-decoration: none; 
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+.footer
+{
+    background-color: black;
+    padding: 10px 0px;
+}
+.footer .nutcuon
+{
+    cursor: pointer;
+}
+@media (max-width: 576px)
+{
+    .luxury-hotel
+    {
+       opacity: 1;
+    }
+    .banner
+    {
+        opacity: 0;
+    }
+    .col-sm-6.anhbentrai
+    {
+      height: auto;
+    }
+    .khungtrang p
+    {
+        font-size: 7px;
+    }
+    .hotel-news .anhtren
+    {
+      margin-left: 0;
+      height: 420px;
+    }
+    .hotel-news .anhduoi
+    {
+        height: 280px;
+        margin-left: 0;
+    }
+    .carousel-inner  
+    {
+    height: 400px;
+    position: relative;
+   
+    }
+    .carousel-inner img{
+        width: 100%;
+        height: 400px;
+    }
+}
+@media (min-width: 577px) and (max-width:720px)
+{
+    .carousel-inner  
+    {
+    height: 600px;
+    position: relative;
+   
+    }
+    .carousel-inner img{
+        width: 100%;
+        height: 600px;
+    }   
+}
+@media (min-width: 720px) and (max-width:1140px)
+{
+    .carousel-inner  
+    {
+    height: 800px;
+    position: relative;
+   
+    }
+    .carousel-inner img{
+        width: 100%;
+        height: 800px;
+    }   
+}
+@media (min-width:1140px)
+{
+    .carousel-inner img{
+        width: 100%;
+        height: 1200px;
+        object-position: 0 -300px;
+    }   
+}

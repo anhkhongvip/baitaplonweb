@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Đặt Phòng</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="Datphong.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/93907e36a7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="khungduoi">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark kichco">
+        <div class="container">
+        <a class="navbar-brand khung2" href="#">HOTEL BOOKING</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#thanh2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="thanh2">
+          <ul class="navbar-nav ml-auto khungto">
+            <li class="nav-item">
+              <a class="nav-link" href="../Khunggiaodien/giaodien.html">Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../VeChungToi/VeChungToi.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Room/Room.html">Phòng</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Các điều khoản và điều kiện</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Lienhe/lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+       </div>
+      </nav>
+    </div>
+    <!-- hetkhungduoi -->    
+    <div class="background-Datphong">
+      <div class="booking">
+       Đặt Phòng
+      </div>
+    </div>
+    <!-- het background-Datphong -->
+    <div class="thanhnho">
+      <div class="text-datphong">Đặt Phòng</div>
+    </div>
+    <!-- het thanhnho -->
+    <div class="_4buocchonphong">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="buoc1">
+            <h1>1</h1>
+            <p>Chọn ngày</p>
+          </div>
+        </div>
+          <div class="col-sm-3">
+            <div class="buoc2">
+              <h1>2</h1>
+              <p>Chọn Phòng</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="buoc3">
+              <h1>3</h1>
+              <p>Dự Phòng</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="buoc4">
+              <h1>4</h1>
+              <p>Xác Nhận</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- het _4buocchonphong -->
+    <div class="information">
+        <div class="thongtin">
+            Thông tin của bạn 
+        </div>
+        <form name="infor">
+        <div class="check">
+          <input type="text" placeholder="Tên của bạn *" id="ten" name="ten">
+          <input type="text" placeholder="Họ *" id="ho" name="ho">
+        </div>
+        <div class="emailandphone">
+          <input type="email" placeholder="Email *" id="email" name="email">
+          <input type="number" placeholder="Số điện thoại *" id="phone">
+        </div>
+        <div class="diachivamagiamgia">
+          <input type="text" placeholder="Địa chỉ " id="diachi" name="diachi">
+          <input type="text" placeholder="Mã giảm giá " id="magiamgia" name="magiamgia">
+        </div>
+        <div class="checkinandcheckout">
+           <div class="denvatra" style="margin-bottom: 1%;"><h2 style="display: inline; margin-right: 10%;">Ngày Đến</h2> <h2 style="display: inline; margin-left: 10%;">Ngày Trả</h2></div>
+          <input type="date" id="check-in" name="check-in">
+          <input type="date" id="check-out" name="check-out">
+        </div>
+        <div class="chonphong">
+          <td><label for="chonphong">Chọn phòng :</label></td>
+          <td><select name="chonphong" id="Chonphong">
+            <option value="1">Phòng Nhỏ</option>
+            <option value="2">Phòng Có Tầm Nhìn</option>
+            <option value="3">Căn Hộ</option>
+            <option value="4">Phòng Sang Trọng</option>
+            <option value="5">Phòng Đôi</option>
+            <option value="6">Phòng Gia Đình</option>
+          </select></td>
+          <td><label for="nguoi" style="margin-left: 50px;">Số người :</label></td>
+          <td><select name="nguoi" id="Nguoi">
+            <option value="1">1 người lớn</option>
+            <option value="2">2 người lớn</option>
+            <option value="3">2 người lớn và 1 trẻ em</option>
+            <option value="4">2 người lớn và 2 trẻ em</option>
+            <option value="5">1 nam 1 nữ</option>
+            <option value="6">3 người lớn</option>
+            <option value="7">4 người lớn</option>
+            <option value="8">4 người lớn và 1 trẻ em</option>
+            <option value="9">5 người lớn</option>
+          </select></td>
+        </div>
+        <div class="yeucaudacbiet">
+         <textarea name="yeucau" id="yeucau" placeholder="Yêu cầu đặc biệt...."></textarea>
+        </div>
+        <div class="phuongthucthanhtoan" style="margin-top: 2%;">
+          <td><input type="radio" name="method" value="1" checked> <label for="method1">Thanh toán bằng tiền mặt <i class="fas fa-wallet"></i> </label>
+          </td>
+          <td><input style="margin-left: 50px;" type="radio" name="method" value="2"> <label  for="method1">Thanh toán bằng thẻ <i class="fas fa-credit-card"></i> </label>
+          </td>
+        </div>
+        <div class="row" style="margin-top: 2%;">
+          <div class="col-sm-3 khung"><img src="images/paypal.png" alt=""></div>
+          <div class="col-sm-3 khung"><img src="images/payoneer.png" alt=""></div>
+          <div class="col-sm-3 khung"><img src="images/visa.png" alt=""></div>
+          <div class="col-sm-3 khung"><img src="images/mastercard.png" alt=""></div>
+        </div>
+        <a href="#" class="nut" onclick="validform(document.forms.infor);">Đặt Ngay</a>
+      </form>
+     </div>
+     <div class="background-footer">
+        <div class="khungnho">
+          <h2 style="color:  #e69b00;;">ƯU ĐÃI ĐẶC BIỆT</h2>
+          <p style="font-size: 20px;">Giảm 20% khi đang là 1 gia đình </p>
+          <p style="font-size: 25px; color: #e69b00;">Giảm 30% khi đi 1 nam 1 nữ </p>
+          <p style="font-size: 20px;">Cảm ơn bạn đã luôn luôn tin tưởng và chọn đến với khách sạn của chúng tôi 
+            <br> Chúc bạn có một kỳ nghỉ thật tuyệt vời bên người yêu , gia đình của bạn.
+          </p>
+        </div>
+     </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+    <script type="text/javascript" src="js/1.js"></script>
+  </body>
+</html>

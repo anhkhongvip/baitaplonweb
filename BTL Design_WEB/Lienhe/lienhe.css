@@ -1,0 +1,226 @@
+*{margin: 0; padding: 0;} 
+body
+{
+    font-family: var(--font2);
+}
+:root
+{
+    --font1:'Poppins', sans-serif;
+    --font2:'Quicksand', sans-serif;
+}
+.navbar-nav.ml-auto.khungto li a
+{
+  position: relative;
+  display: inline-block;
+}
+.navbar-nav.ml-auto.khungto li a::after
+{
+    
+  content: ' ';
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -45%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.navbar-nav.ml-auto.khungto li a:hover::after
+{
+  opacity: 1;
+}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.kichco {
+    padding: 15px 0px;
+}
+.nav-item
+{
+    margin: 0px 7px;
+}
+a.nav-link
+{
+ color: white!important;
+ font-weight: 500;
+}
+/* hetthanhmenu */
+.khung-background
+{
+    background-image: url(images/anh14.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.khung-background::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(left,#00000054 0%,#12121347 50%,#0000002b 100%);
+}
+.khung-background .contact
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    color: #ffffff9e;
+    font-size: 60px;
+    font-weight: 600;
+    transform: translate(-50%,-50%);
+}
+/* het khung-background */
+.banner
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    background-image: url(images/anh2.jpg);
+    margin-top: 20%;
+    height: 900px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.banner::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: -webkit-linear-gradient(left,#00000054 0%,#12121378 50%,#0000002b 100%);
+}
+.banner .khungmail
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-align: center;
+    margin-top: 2%;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 90%;
+    color: white;
+    z-index: 2;
+}
+.banner .khungtrinhbay
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    z-index: 2;
+    background-color: transparent;
+    text-align: center;
+}
+.khungtrinhbay #name ,.khungtrinhbay #mail
+{
+    width: 40%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #e2dfdf;
+    border-radius: 3px;
+    padding: 0 0.5%;
+}
+.khungtrinhbay #name 
+{
+ margin-right: 5%;
+}
+.khungtrinhbay #mail
+{
+    margin-left: 5%;
+}
+.khungtrinhbay #topic
+{
+    margin-top: 1%;
+    width: 90.4%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #e2dfdf;
+    border-radius: 3px;
+    padding: 0 0.5%;
+}
+.khungtrinhbay #about
+{
+    margin-top: 1%;
+    width: 90.4%;
+    height:250px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #e2dfdf;
+    padding: 0 0.5%;
+}
+.khungtrinhbay .nut
+{
+    display: inline-block;
+    margin-top: 1%;
+    width: 30%;
+    background-color:transparent;
+    padding: 10px 0;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+    font-weight: 700;
+    transition: 0.4s;
+    text-decoration: none;
+
+}
+.khungtrinhbay .nut:hover
+{
+    background-color:#f7f1e3;
+    color: black;
+}
+.khung3icon
+{
+    margin-top: 20px;
+    text-align: center;
+}
+.khung3icon i
+{
+    margin: 10px 0;
+    font-size: 30px;
+}
+@media only screen and (max-width: 576px) {
+   .banner
+   {
+       width: 100%;
+       height: 400px;
+   }
+   .banner .khungmail  p{
+       font-size: 10px !important;
+   }
+}
+@media only screen and (max-width: 768px)
+{
+    .banner
+    {
+        width: 100%;
+        height: 600px;
+    }
+    .banner .khungmail  p{
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 992px)
+{
+    .banner
+    {
+        height: 700px;
+    }
+}    

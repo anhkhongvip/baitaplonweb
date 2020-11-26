@@ -1,0 +1,217 @@
+*{margin: 0; padding: 0;} 
+body
+{
+    font-family: var(--font2);
+    background-color: #dcdde1;
+}
+:root
+{
+    --font1:'Poppins', sans-serif;
+    --font2:'Quicksand', sans-serif;
+}
+.navbar-nav.ml-auto.khungto li a
+{
+  position: relative;
+  display: inline-block;
+}
+.navbar-nav.ml-auto.khungto li a::after
+{
+    
+  content: ' ';
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -45%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.navbar-nav.ml-auto.khungto li a:hover::after
+{
+  opacity: 1;
+}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.kichco {
+    padding: 15px 0px;
+}
+.nav-item
+{
+    margin: 0px 7px;
+}
+a.nav-link
+{
+ color: white!important;
+ font-weight: 500;
+}
+/* hetthanhmenu */
+.background-Datphong
+{
+    background-image: url(images/anh1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    background-attachment: fixed;
+    position: relative;
+}
+.background-Datphong .booking
+{
+    width: 20%;
+    height: 100px;
+    color: #ffffff75;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 55px;
+}
+.thanhnho
+{
+ margin-top: 4%;
+ background-color: greenyellow;
+ width: 70%;
+ margin-left: auto;
+ margin-right: auto;
+ border-bottom: 5px solid #2f3640;
+ border-radius: 8px;
+ position: relative;
+}
+.thanhnho .text-datphong
+{
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 30px;
+    background-color: #dcdde1;
+    display: inline-block;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+/* het thanh nho */
+._4buocchonphong
+{
+ margin-top: 4%;
+}
+._4buocchonphong .col-sm-3
+{
+text-align: center;
+}
+._4buocchonphong .col-sm-3 h1
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+._4buocchonphong .col-sm-3 p
+{
+    font-weight: 700;
+}
+._4buocchonphong .col-sm-3 .buoc1 h1,._4buocchonphong .col-sm-3 .buoc2 h1
+{
+    background-color: #cdaf87;
+}
+._4buocchonphong .col-sm-3 .buoc1 p,._4buocchonphong .col-sm-3 .buoc2 p
+{
+    color: #cdaf87;
+}
+._4buocchonphong .col-sm-3 .buoc3 h1
+{
+    background-color: #283c5a;
+}
+._4buocchonphong .col-sm-3 .buoc3 p
+{
+    color: #283c5a;
+}
+._4buocchonphong .col-sm-3 .buoc4 h1
+{
+   border: 1px solid gray;
+   color: gray;
+}
+._4buocchonphong .col-sm-3 .buoc4 p
+{
+    color: gray;
+}
+/* het _4buocchonphong */
+.information
+{
+    text-align: center;
+    margin-top: 4%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.information .thongtin
+{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.information .check,.information .emailandphone,.information .diachivamagiamgia,.information .chonphong,.information .checkinandcheckout
+{
+    width: 100%;
+    margin-bottom: 1%;
+}
+.information .check #ten,.information .check #ho,#email,#phone,#diachi,#magiamgia,#check-in,#check-out
+{
+    width: 30%;
+    border: 2px solid gray;
+    outline: none;
+    height: 50px;
+    padding-left: 5px;
+}
+.information .check #ho,#phone,#magiamgia,#check-out
+{
+    margin-left: 10px;
+}
+.information .yeucaudacbiet #yeucau
+{
+    width: 61%;
+    border: 2px solid gray;
+    outline: none;
+    height: 200px;
+}
+.information a.nut
+{
+    margin-top: 2%;
+    padding: 10px 0;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid #cdaf87;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #cdaf87;
+    transition: 0.4s;
+}
+.information a.nut:hover
+{
+    background-color:#cdaf87;
+    color: white;
+}
+.background-footer
+{
+    margin-top: 5%;
+    background-image: url(images/anh2.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.background-footer .khungnho
+{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 700;
+    color: white;
+    transform: translate(-50%,-50%);
+}

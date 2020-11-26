@@ -1,0 +1,374 @@
+*{margin: 0; padding: 0;}
+body
+{
+    font-family: var(--font2);
+}
+:root
+{
+    --font1:'Poppins', sans-serif;
+    --font2:'Quicksand', sans-serif;
+}
+.navbar-nav.ml-auto.khungto li a
+{
+  position: relative;
+  display: inline-block;
+}
+.navbar-nav.ml-auto.khungto li a::after
+{
+    
+  content: ' ';
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -45%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.navbar-nav.ml-auto.khungto li a:hover::after
+{
+  opacity: 1;
+}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.kichco {
+    padding: 15px 0px;
+}
+.nav-item
+{
+    margin: 0px 7px;
+}
+a.nav-link
+{
+ color: white!important;
+ font-weight: 500;
+}
+/* het thanh menu */
+.background-vechungtoi
+{
+    background-image: url(images/anh7.jpg);
+    width:100%;
+    height: 400px;
+    background-position: bottom;
+    background-size: cover;
+    position: relative; 
+}
+.background-vechungtoi::before
+{
+  content: " ";  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.4s;
+  background-image: -webkit-linear-gradient(left,#00000054 0%,#12121347 50%,#0000002b 100%);
+}
+.background-vechungtoi .khoicangiua
+{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 2;
+    top:50%;
+    font-size: 30px;
+    color: white;
+    overflow: hidden;
+}
+.khoicangiua-text
+{
+    position: absolute;
+    top:-150%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    transition: 0.4s;
+}
+.background-vechungtoi:hover .khoicangiua-text
+{
+    top:0;
+}
+ /* hetbackgroundvechungtoi  */
+ .banner
+ {
+     width: 100%;
+     height: auto;
+     padding: 20px 0px;
+ }
+ .banner-text
+ {
+     padding-top: 4%;
+     width: 70%;
+     margin: auto;
+     text-align: center;
+     font-size: 25px;
+     font-weight: bold;
+ }
+ .banner-text .fas.fa-heart
+ {
+     font-size: 25px;
+     color: #e84118;
+ }
+ /* hetbanner */
+ .khoi3anh
+ {
+     padding: 50px 0px;
+     width: 100%;
+     height: auto;
+ }
+ .khoi-anh
+ {
+     width: 70%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+ }
+ .khoi-anh .anh
+ {
+     width: 32%;
+     height: auto;
+     position: relative;
+     cursor: pointer;
+ }
+ .anh img
+ {
+     width: 100%;
+     height: 100%;
+     transition: 0.8s;
+ }
+ .anh::after
+ {
+  width: 100%;
+  height: 100%;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+ }
+ .anh:hover::after
+ {
+    background-image: -webkit-linear-gradient(left,#00000038 0%,#12121326 50%,#00000014 100%);
+ }
+ .anh:hover img
+ {
+     transform: scale(0.9);
+ }
+ .anh-text
+ {   width: 100%;
+     height: 30%;
+     position: absolute;
+     z-index: 2;
+     top: 50%;
+     left: 0;
+     text-align: center;
+     transform: translate(0%,-50%);
+     font-weight: 700;
+     color: white;
+     overflow: hidden;
+ }
+ .anh-text p
+ {
+     position: absolute;
+     top:-60%;
+     left: 50%;
+     z-index: 3;
+     transform: translate(-50%,-50%);
+     transition: 0.8s;
+ }
+ .anh:hover p
+ {
+    top:50%;
+    left:50%;
+ }
+ .background-banner
+ {
+     width: 100%;
+     background-size: cover;
+     background-image: url(images/anh10.jpg);
+     height: 500px;
+     background-position: bottom;
+ }
+ /* het backgroundbanner */
+ .doingu-designer
+ {
+     margin-top: 40px;
+     width: 100%;
+     height: 600px;  
+     background-color: #ecf0f1;
+ }
+ ._3nguoi
+ {   
+     padding-top: 5%;
+     margin: auto;
+     width: 60%;
+     height: 80%;
+     display: flex;
+     justify-content: space-between;
+ }
+ ._3nguoi-anh1
+ {
+     width: 32%;
+     height: 100%;
+     background-image: url(images/DinhHung2.jpg);
+     background-size: cover;
+     position: relative;
+ }
+ ._3nguoi-anh1:hover::after,._3nguoi-anh2:hover::after,._3nguoi-anh3:hover::after
+ {   
+     content:" ";
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 2;
+     background-image: -webkit-linear-gradient(left,#fffefe94 0%,#f2f2f5ad 50%,#fffcfcb0 100%);
+ }    
+ ._3nguoi-anh2
+ {
+     width: 32%;
+     height: 100%;
+     background-image: url(images/QuyQuyen2.jpg);
+     background-size: cover;
+     position: relative;
+ }
+ @media only screen and (max-width:576px)
+ {
+ ._3nguoi{
+     width: 100%;
+     height: 40%;
+ }    
+ ._3nguoi-anh1,._3nguoi-anh2,._3nguoi-anh3
+   {
+    width: 40%;
+    height: 100%;
+   }
+ ._3nguoi p,._3nguoi i
+   {
+     opacity: 0;
+   }
+  .anh-text p
+  {
+      opacity: 0;
+  }
+  .doingu-designer
+    {
+        height: 0px;
+    }    
+ }
+ @media only screen and (min-width:576px) and (max-width:720px)
+ {
+    .anh-text 
+    {
+    opacity: 0;
+    }
+    ._3nguoi{
+        width: 100%;
+        height: 60%;
+    }    
+    ._3nguoi-anh1,._3nguoi-anh2,._3nguoi-anh3
+      {
+       width: 40%;
+       height: 100%;
+      }
+ }
+ @media only screen and (min-width:720px) and (max-width:960px)
+ {
+    .anh-text 
+    {
+        font-size: 15px;
+    }
+    ._3nguoi{
+        width: 100%;
+        height: 80%;
+    }    
+    ._3nguoi-anh1,._3nguoi-anh2,._3nguoi-anh3
+      {
+       width: 40%;
+       height: 100%;
+      }    
+ }
+ @media only screen and (min-width:960px)
+ {
+    .anh-text 
+    {
+        font-size: 20px;
+    }    
+ }
+ @media only screen and (max-width:1140px)
+ {
+     ._3nguoi-anh
+     {
+         font-size: 10px;
+     }
+     .caclogo img:nth-child(6)
+     {
+         opacity: 0;
+     }
+ }
+ ._3nguoi-anh3
+ {
+    width: 32%;
+    height: 100%;
+     background-image: url(images/BinhMinh2.jpg);
+     background-size: cover;
+     position: relative;
+ }
+ ._3nguoi-anh
+ {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 100%;
+     height: 20%;
+     transform: translate(-50%,-50%);
+     text-align: center;
+     font-size: 20px;
+     font-weight: 700;
+     z-index: 3;
+     color: #41294a;
+     overflow: hidden;
+ }
+ ._3nguoi-anh p
+ {
+     transition: 0.4s;
+     position: absolute;
+     top:-50%;
+     left: 50%;
+     transform: translate(-50%,0);
+ }
+ ._3icon
+ {
+     position: absolute;
+     top: 150%;
+     left: 50%;
+     transform: translate(-50%,0);
+     transition: 0.4s;
+ }
+ ._3icon i:nth-child(2)
+ {
+     margin: 0 15px;
+ }
+ ._3nguoi-anh1:hover p,._3nguoi-anh2:hover p,._3nguoi-anh3:hover p
+ {
+     top: 10%;
+ }
+ ._3nguoi-anh1:hover ._3icon ,._3nguoi-anh2:hover ._3icon,._3nguoi-anh3:hover ._3icon
+ {
+     top: 50%;
+ }
+/* hetdoingu */
+.logo-end
+{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.caclogo
+{
+    width: 90%;
+    margin: auto;
+}
+.caclogo img
+{
+    width: 15%;
+}
